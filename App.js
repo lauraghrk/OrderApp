@@ -12,7 +12,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name='Home' component={Home} options={{title: 'OrderApp'}} />
-        <Stack.Screen name='NewTab' component={NewTab} />
+        <Stack.Screen name='NewTab' component={NewTab} options={{title: 'OrderApp'}}/>
         <Stack.Screen name='AllTabs' component={AllTabs} />
       </Stack.Navigator>
     </NavigationContainer>

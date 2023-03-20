@@ -9,7 +9,7 @@ export const globalStyles = StyleSheet.create({
     },
     screenTitle: {
         alignSelf: 'center',
-        marginTop: 30,
+        margin: 30,
         fontWeight: 'bold',
         fontSize: 20
     },

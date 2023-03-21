@@ -14,14 +14,16 @@ export default function NewTab({navigation}) {
                 keyboardType='numeric'
                 style={styles.input} 
                 placeholder='Table number'
+                placeholderTextColor={'#999'}
                 onChangeText={(val) => setTable(val)}
             />
             <TextInput 
                 style={styles.input} 
                 placeholder='Client name'
+                placeholderTextColor={'#999'}
                 onChangeText={(val) => setClient(val)}
             />
-            <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Menu')}>
+            <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Menu', {tableNumber: table, clientName: client})}>
                 <Text style={globalStyles.buttonText}>Confirm</Text>
             </Pressable>
             <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Home')}>
@@ -37,8 +39,8 @@ const styles = StyleSheet.create({
         padding: 4,
         width: 200,
         backgroundColor: '#FFF',
-        borderColor: '#333',
-        borderWidth: 1,
+        borderColor: '#000',
+        borderWidth: 0.1,
         borderRadius: 2,
     }
 })

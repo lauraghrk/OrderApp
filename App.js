@@ -11,7 +11,7 @@ const Stack = createNativeStackNavigator()
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='NewTab'>
+      <Stack.Navigator initialRouteName='Menu'>
         <Stack.Screen name='Home' component={Home} options={{title: 'OrderApp'}} />
         <Stack.Screen name='NewTab' component={NewTab} options={{title: 'OrderApp'}}/>
         <Stack.Screen name='AllTabs' component={AllTabs} />
